@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    </head>
+    <body>
+        <h1><i>Ever green valley college survey</i></h1>
+        <form>
+            <p style="color: brown; font-size: large;"><b><i>Personal Information</i></b></p>
+
+            
+            <label> <b>Name:</b> </label>
+            <input type="text"><br>
+            <label> <b>Email:</b> </label>
+            <input type="text"><br><br>
+            
+            <label><b>Age:</b> </label><br>
+            <input type="radio" id="<18" name="Age">
+            <label> < 18 </label>
+                <input type="radio" name="Age">
+            <label> 18-25 </label>
+                <input type="radio" name="Age">
+            <label> 25-40 </label>
+                <input type="radio" name="Age">
+            <label> 40-65 </label>
+            <input type="radio" name="Age">
+            <label> 65+ </label>
+            
+            <p style="color: brown; font-size: large;"><b><i>Academic Information</i></b></p>
+            <label><b>Goals:</b> Check all that apply</label>
+            <br>
+            <input type="checkbox" id="Goals1" name="Goals1">
+            <label for="Goals1"> Associate Degree</label>
+            <input type="checkbox" id="Goals2" name="Goals2">
+            <label for="Goals2"> Transfer to CSU</label>
+            <input type="checkbox" id="Goals3" name="Goals3">
+            <label for="Goals3"> Transfer to UC</label><br>
+            
+            <input type="checkbox" id="Goals4" name="Goals4">
+            <label for="Goals4"> Personal Enrichment</label>
+            <br>
+<br>
+            <label><b>Field of study:</b> Select all that apply, hold CTRL when clicking to select multiple options</label>
+
+            <label for="study">Choose the field:</label><br>
+
+        <select onfocus='this.size=3;' onblur='this.size=1;' onchange='this.size=1; this.blur();' name="Field" id="field">
+        <option value="Accounting">Accounting</option>
+        <option value="Autonomy">Autonomy</option>
+        <option value="Business">Business</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="physics">Physics</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Health">Health</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <b>Comments:</b>
+        <br>
+        <textarea rows="8" cols="50" name="comment" form="usrform">
+            </textarea>
+<br>
+<br>
+
+            <button type="submit">Send Data</button>
+            <button type="Reset">Reset form</button>
+
+
+
+        </form>
+    </body>
+</html>
